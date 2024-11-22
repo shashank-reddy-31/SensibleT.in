@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react'
+import TransactionForm from './components/TransactionForm/TransactionForm'
+import TransactionList from './components/TransactionList/TransactionList'
+import TransactionDetails from './components/TransactionDetails/TransactionDetails'
+import './App.css'
 
 function App() {
+  const [transactions, setTransactions] = useState([])
+  const [selectedTransaction, setSelectedTransaction] = useState(null)
+
+  const handleAddTransaction = transaction => {
+    setTransactions([...transactions, transaction])
+  }
+
+  const handleSelectTransaction = transaction => {
+    setSelectedTransaction(transaction)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TransactionForm onAddTransaction={handleAddTransaction} />
+      <TransactionList
+        transactions={transactions}
+        onSelectTransaction={handleSelectTransaction}
+      />
+      <TransactionDetails transaction={selectedTransaction} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+

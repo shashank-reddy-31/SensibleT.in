@@ -1,0 +1,50 @@
+.transaction-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .h2 {
+    font-family: 'roboto';
+    font-weight: 100;
+  }
+  
+  .transaction-form:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .transaction-form input {
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .transaction-form input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .transaction-form button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .transaction-form button:hover {
+    background-color: #0056b3;
+  }
+  
