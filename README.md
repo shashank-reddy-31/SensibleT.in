@@ -1,3 +1,28 @@
+This is a simple transaction management application built with React. Users can add transactions with descriptions and amounts, view a list of transactions, and click on any transaction to see its details.
+
+Features:
+Add new transactions with description and amount.
+Display a list of transactions.
+Click on a transaction to view its details.
+
+Technologies Used:
+React: A JavaScript library for building user interfaces.
+CSS: For styling the application.
+
+Usage:
+1) Adding a Transaction
+Enter a description of the transaction in the designated input field.
+Enter the amount for the transaction.
+Click the "Add Transaction" button. The transaction will be added to the list below.
+
+2)Viewing Transactions:
+All added transactions will be displayed in a list format. Each transaction shows its description and amount.
+Click on any transaction in the list to view its details.
+
+3) Transaction Details
+The details of the selected transaction will be displayed, including its description and amount.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
